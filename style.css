@@ -1,0 +1,228 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:white;
+	font-family: 'Roboto', sans-serif;
+}
+/* Header Portion */
+#header{
+	background-color:lightyellow;
+	padding:10px;
+	border-bottom:0.5px solid lightyellow;
+	display: flex;
+	flex-wrap:wrap;
+}
+#header h2{
+	color:lightseagreen;
+	font-family:georgia;
+	margin-top: 60px;
+	font-size: 50px;
+	margin-left: 10px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#header img{
+	width: 150px;
+	margin-left: 100px;
+}
+
+/* Navigation Portion */
+#nav{
+	background-color:lightyellow;
+	height:38px;
+	border-bottom:1px solid lightyellow;
+	margin-bottom: 5px;
+}
+#nav ul{
+	background-color:lightyellow;
+	list-style-type:none;
+	z-index:999;
+}
+#nav ul li{
+	float:left;
+	border-right:1px solid lightyellow;
+}
+#nav ul li:last-child{
+	border:none;
+}
+#nav ul li a{
+	text-decoration:none;
+	color:lightseagreen;
+	display:block;
+	padding:10px 20px;
+	font-family:arial;
+}
+#nav ul li a:hover{
+	color:lightslategrey;
+	background-color:lightsalmon;
+}
+#nav ul li{
+	position:relative;
+}
+#nav ul li ul{
+	position:absolute;left:-99999px;
+	background:lightyellow;
+}
+#nav ul li:hover ul{
+	left:0;
+}
+#nav ul li ul li:first-child{
+	border-top:1px solid lightyellow;
+}
+#nav ul li ul li{
+	float:none;
+	border-right:none;
+	border-bottom:1px solid lightyellow;
+	width:200px;
+}
+/* Content Portion */
+#content_wrapper{
+	background-color:#fff;
+	padding:10px;
+	overflow:hidden;
+	margin-top: 50px;
+}
+#content{
+	width:50%;
+	margin-right:20px;
+	float:left;
+	margin-left:5%;
+}
+#content h2{
+	color:lightseagreen;
+	font-family:arial;
+	margin-bottom:5px;
+	margin-top:15px;
+	font-weight: bold;
+}
+#content img{
+	width: 800px;
+}
+/* Facility Portion */
+
+#plane-facility{
+	margin-top: 60px;
+	font-size: 30px;
+	color:lightseagreen;
+	font-weight: bold;
+}
+.facility-wrapper{
+	display: flex;
+	flex-wrap: nowrap;
+	background-color:#EEEE;
+	margin-top: 20px;
+	margin-bottom: 70px;
+	border-radius: 5px;
+}
+.facility-wrapper div{
+	background-color:#fff;	
+	margin: 10px;
+	width: 400px;
+	padding: 5px;
+	height: 300px;
+	text-align: center;
+	line-height: 30px;
+	transition: 1s all ease;
+		
+}
+.facility-wrapper div:hover {
+	box-shadow: 10px 10px 30px gray;
+}
+.facility-wrapper h3{
+	color:#455a64;
+	font-weight: bold;
+}
+.small-margin{
+	color:lightseagreen;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px;
+}
+/* Side-bar Portion */
+#sidebar{
+	width:30%;
+	float:left;
+	margin-left: 7%;
+	background: linen;
+	padding: 20px;
+	border-radius: 10px;
+}
+#sidebar ul{
+	list-style-type: style circle;
+	margin-left: 35px;
+}
+#sidebar ul li a{
+	text-decoration:none;
+	color:lightseagreen;
+	padding:3px;
+	font-weight: bold;
+	
+}
+#sidebar ul li:hover a{
+	color:lightskyblue;
+}
+#notice{
+	color:lightseagreen;
+	padding: 5px;
+	font-weight: bold;
+}
+.services{
+	margin-top: 20%;
+	background-color: lightsalmon;
+	padding:5px;
+	width: 300px;
+	height: 100px;
+	border-radius: 10px;
+	margin-left:15%;
+}
+.services h2{
+	color: white;
+	margin-top: 15px;
+	text-align: center;
+}
+.routes{
+	margin-top:20%;
+	border:1px solid gray;
+	height: 360px;
+	border-radius: 5px;
+	width: 300px;
+	margin-left:17%;
+	background-color:linen;
+	
+}
+.routes h2{
+	background-color:lightyellow;
+	padding: 10px;
+	
+	
+}
+.routes :hover{
+	 background-color: lightseagreen;
+}
+.routes h2:last-child{
+	border: none;
+} 
+/* Footer Portion */
+#footer{
+	background-color:lightyellow;
+	padding:10px;
+	text-align:center;
+}
+#footer p{
+	color:black;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+

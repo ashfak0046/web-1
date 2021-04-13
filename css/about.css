@@ -1,0 +1,158 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:white;
+	font-family: 'Roboto', sans-serif;
+}
+/* Header Portion */
+#header{
+	background-color:lightyellow;
+	padding:10px;
+	border-bottom:0.5px solid lightyellow;
+	display: flex;
+	flex-wrap:wrap;
+}
+#header h2{
+	color:lightseagreen;
+	font-family:georgia;
+	margin-top: 60px;
+	font-size: 50px;
+	margin-left: 10px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#header img{
+	width: 150px;
+	margin-left: 100px;
+}
+
+/* Navigation Portion */
+#nav{
+	background-color:lightyellow;
+	height:38px;
+	border-bottom:1px solid lightyellow;
+	margin-bottom: 5px;
+}
+#nav ul{
+	background-color:lightyellow;
+	list-style-type:none;
+	z-index:999;
+}
+#nav ul li{
+	float:left;
+	border-right:1px solid lightyellow;
+}
+#nav ul li:last-child{
+	border:none;
+}
+#nav ul li a{
+	text-decoration:none;
+	color:lightseagreen;
+	display:block;
+	padding:10px 20px;
+	font-family:arial;
+}
+#nav ul li a:hover{
+	color:lightslategrey;
+	background-color:lightsalmon;
+}
+#nav ul li{
+	position:relative;
+}
+#nav ul li ul{
+	position:absolute;left:-99999px;
+	background:lightyellow;
+}
+#nav ul li:hover ul{
+	left:0;
+}
+#nav ul li ul li:first-child{
+	border-top:1px solid lightyellow;
+}
+#nav ul li ul li{
+	float:none;
+	border-right:none;
+	border-bottom:1px solid lightyellow;
+	width:200px;
+}
+
+/*  */
+#name-highlight{
+    color: orange;
+}
+.wrapper{
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: 20px;
+	margin-bottom: 70px;
+	border-radius: 5px;
+}
+.wrapper div{
+	background-color:#fff;	
+	margin: 10px;
+		
+}
+.wrapper div img{
+    width: 500px;
+    padding: 5px;
+    margin-left: 50%;
+}
+#about{
+    text-align: justify;
+    width:500px;
+    margin-left: 7%;
+    margin-top: 8%;
+}
+.wrapper h1{
+    font-size: 40px;
+}
+.wrapper p{
+    font-size: 20px;
+}
+/*  */
+.working-area{
+    height: 300px;
+    margin-bottom: 150px;
+    
+}
+.working{
+    margin-left: 18%;
+    margin-top: 10%;
+    width: 60%;
+    height: 75%;
+    background-image: url("/img/Group_33094_1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.button{
+    float:right;
+    margin: 10% 5%;
+    background-image: linear-gradient( rgb(223, 158, 132), tomato);
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    padding:10px 20px;
+    border-radius: 10px;
+    
+}
+.working h1{
+    font-size: 40px;
+    margin:4% 5%;
+    padding: 5% 2%;
+    float: left;
+    color:rgb(228, 230, 240);
+    
+}
+/* Footer Portion */
+#footer{
+	background-color:lightyellow;
+	padding:10px;
+	text-align: center;
+}
+#footer-title{
+	color:black;
+	font-weight: bold;
+}

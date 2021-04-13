@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/flower.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/registration.css">
+    <link rel="shortcut icon" href="./img/globe.png" type="image/x-icon">
+    <title>Travel With Us</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <img src="/img/globe.png" alt="">
+            <h2>Travel With Us</h2>
+        </div>
+    </header>
+    <nav>
+        <div id="nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="#">Other Features&raquo;</a>
+                    <ul>
+                        <li><a href="#">Dropdown Item</a></li>
+                        <li><a href="#">Dropdown Item</a></li>
+                        <li><a href="#">Dropdown Item</a></li>
+                        <li><a href="#">Dropdown Item</a></li>
+                        <li><a href="#">Dropdown Item</a></li>
+                    </ul>
+                </li>
+                <li><a href="./inside.html">Our Services</a></li>
+                <li><a href="/login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="registration-div">
+        <div class="container">
+            <form class="form" id="form">
+                <h2>Register <span>With</span> Us</h2>
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter User Name">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter Your Email">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="new-password" placeholder="Enter Your Password">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password2">Password</label>
+                    <input type="password" id="password2" placeholder="Confirm Your Password">
+                    <small>Error Message</small>
+                </div>
+
+                <button id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        const submitButton = document.getElementById('submit-btn');
+        const username = document.getElementById('username');
+        const email = document.getElementById('email');
+        const password = document.getElementById('new-password');
+        const password2 = document.getElementById('password2');
+        // 
+        function showError(input, message) {
+            const formControl = input.parentElement;
+            formControl.className = 'form-control error';
+            const small = formControl.querySelector('small');
+            small.innerText = message;
+        }
+        // 
+        function showSucess(input) {
+            const formControl = input.parentElement;
+            formControl.className = 'form-control success';
+
+        }
+        // 
+        function emailValidation(email) {
+            const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+        submitButton.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            if (username.value == '') {
+                showError(username, 'username is required');
+            }
+            else {
+                showSucess(username);
+            }
+            if (email.value === '') {
+                showError(email, 'email is required');
+            }
+            else if (!emailValidation(email.value)) {
+                showError(email, 'email is required');
+            }
+            else {
+                showSucess(email);
+            }
+            if (password.value === '') {
+                showError(password, 'password is required');
+            }
+            else {
+                showSucess(password);
+            }
+            if (password2.value === '') {
+                showError(password2, 'confirm is required');
+            }
+            else {
+                showSucess(password2);
+            }
+        })
+    </script>
+
+    <footer>
+        <div id="footer">
+            <p>&copy; All Right Reserved By-Sarwar</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
