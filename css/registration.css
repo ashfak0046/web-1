@@ -25,14 +25,13 @@ body{
 
 #header img{
 	width: 150px;
-	margin-left: 100px;
+	margin-left: 50px;
 }
 
 /* Navigation Portion */
 #nav{
 	background-color:lightyellow;
 	height:38px;
-	border-bottom:1px solid lightyellow;
 	margin-bottom: 5px;
    
 }
@@ -43,7 +42,6 @@ body{
 }
 #nav ul li{
 	float:left;
-	border-right:1px solid lightyellow;
 }
 #nav ul li:last-child{
 	border:none;

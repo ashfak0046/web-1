@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login.css">
-    <link rel="shortcut icon" href="./img/globe.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/airplane.png" type="image/x-icon">
     <title>Travel With Us</title>
 </head>
 
 <body>
     <header>
         <div id="header">
-            <img src="img/globe.png" alt="">
+            <img src="img/airplane.png" alt="">
             <h2>Travel With US</h2>
         </div>
     </header>
@@ -79,7 +79,7 @@
             return re.test(String(email).toLowerCase());
         }
         // // // // //
-        submitButton.addEventListener('click', (e) => {
+        submitButton.addEventListener('click',function (e)  {
             e.preventDefault();
             if (email.value === '') {
                 showError(email, 'Email is required');
