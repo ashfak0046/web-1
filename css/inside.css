@@ -102,6 +102,9 @@ body{
 #about h4{
     color:lightgray;
 }
+span{
+	color: lightseagreen;
+}
 /* Footer Portion */
 #footer{
 	background-color:lightyellow;

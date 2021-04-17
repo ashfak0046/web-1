@@ -71,7 +71,6 @@
         function showSucess(input) {
             const formControl = input.parentElement;
             formControl.className = 'form-control success';
-
         }
         // Email Validation
         function emailValidation(email) {
@@ -79,7 +78,7 @@
             return re.test(String(email).toLowerCase());
         }
         // // // // //
-        submitButton.addEventListener('click',function (e)  {
+        submitButton.addEventListener('click', function (e) {
             e.preventDefault();
             if (email.value === '') {
                 showError(email, 'Email is required');
@@ -91,7 +90,7 @@
                 showSucess(email);
             }
             if (password.value === '') {
-                showError(password, 'Password is required')
+                showError(password, 'Password is required');
 
             }
             else {
@@ -101,7 +100,7 @@
     </script>
     <footer>
         <div id="footer">
-            <p>&copy; All Right Reserved By-Sarwar</p>
+            <p>&copy; All Right Reserved By-Adil</p>
         </div>
     </footer>
 </body>

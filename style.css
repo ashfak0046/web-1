@@ -86,22 +86,65 @@ body{
 }
 .about-us img{
 	margin-top: 5%;
-	width: 600px;
+	width: 700px;
 	border: 2px solid lightblue;
-	border-radius: 10px;
+	border-radius: 50px;
 	margin-left: 1%;
+	
 
 }
  .about-us h1{
 	text-align: center;
-	padding: 5px;
+	padding: 15px;
 	font-size: 40px;
 }
 .about-us h3{
 	text-align: center;
-	padding: 5px;
+	padding: 15px;
+}
+span{
+	color: lightseagreen;
 }
 /* facility */
+.wrapper-2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.routes{
+	margin-left: 5%;
+	width: 30%;
+	background-color:lightgrey;
+	padding: 20px;
+	margin-bottom:4%;
+	border-radius: 10px;
+	
+}
+.routes h1{
+	padding: 5px;
+	color:lightseagreen;
+}
+.routes ul{
+	margin-left: 5%;
+	padding: 10px;
+	list-style-type:circle;
+}
+.routes div{
+	border:2px solid lightgrey;
+	background-color:white;
+	margin-top: 5%;
+	text-align: center;
+}
+.routes h2{
+	padding: 5px;
+	line-height: 60px;
+	border-bottom: 1px solid black;
+	background-color: lightcyan;
+	color: lightseagreen;
+}
+.routes h2:last-child{
+	border: none;
+}
 .facility{
 	display: flex;
 	align-items: center;
@@ -110,10 +153,11 @@ body{
 	margin-bottom: 10%;
 	margin-top: 5%;		
 	height: 500px;
+	width: 60%;
 }
 .facility div{
 	background-color:#fff;	
-	margin: 20px;
+	margin: 10px;
 	width: 300px;
 	padding: 5px;
 	height: 300px;
@@ -122,7 +166,7 @@ body{
 	transition: 1s all ease;
 }
 .facility div:hover{
-	box-shadow: 10px 10px 30px gray;
+	box-shadow: 0px 0px 35px gray;
 }
 .small-margin{
 	color:lightseagreen;
